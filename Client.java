@@ -15,6 +15,11 @@ public class Client {
             Addition add = (Addition) Naming.lookup(String.format("//%s/Addition", host));
 
             System.out.println(add.sum2nums(69, 420));
+            add.appendToNums(10);
+            add.appendToNums(4);
+            add.appendToNums(8);
+            add.appendToNums(2);
+            add.printNums();
 
         } catch (Exception error) {
             // prints error
